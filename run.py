@@ -23,3 +23,9 @@ wordDictionary = [
 # Choose a random word
 
 randomWord = random.choice(wordDictionary)
+
+# Prints out dashed lines for the user to fill in the word
+# using for loop
+
+for i in randomWord:
+    print("_", end=" ")
