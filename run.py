@@ -18,3 +18,8 @@ wordDictionary = [
     "mole",
     "tablet"
 ]
+
+
+# Choose a random word
+
+randomWord = random.choice(wordDictionary)
