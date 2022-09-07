@@ -2,7 +2,7 @@ import random
 
 name = input("Enter Your Name: ")
 print("Hello", name, "Welcome to Hangman Game!")
-print("Try to guess the word in under ten attempts!")
+print("Try to guess the word in under six attempts!")
 print("---------------------------------------------")
 
 
@@ -103,4 +103,13 @@ def print_lines():
     print("\r")
     for character in randomWord:
         print("\u203E", end=" ")
+
+
+# Variables to operate the game
+length_of_word_to_guess = len(randomWord)
+amount_of_times_wrong = 0
+current_guess_index = 0
+current_letters_guessed = []
+current_letters_right = 0
+
 
