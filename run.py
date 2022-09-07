@@ -93,3 +93,14 @@ def print_word(guessed_letters):
             print(" ", end=" ")
         counter += 1
     return right_letters
+
+
+# Printing underscores underneath the letters by using a return character
+# and printing OVERLINE with a special character \u203E
+
+
+def print_lines():
+    print("\r")
+    for character in randomWord:
+        print("\u203E", end=" ")
+
