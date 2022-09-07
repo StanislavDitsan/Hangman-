@@ -117,3 +117,12 @@ while (amount_of_times_wrong != 6 and current_letters_right !=
     print("\nLetters guessed so far: ")
     for letter in current_letters_guessed:
         print(letter, end=" ")
+# Asking for the input
+    letter_guessed = input("\nPlease guess a letter: ")
+# If the User is right
+    if (randomWord[current_guess_index] == letter_guessed):
+        print_hangman(amount_of_times_wrong)
+        current_guess_index += 1
+        current_letters_guessed.append(letter_guessed)
+        current_letters_right = print_word(current_letters_guessed)
+        print_lines()
