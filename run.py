@@ -126,3 +126,14 @@ while (amount_of_times_wrong != 6 and current_letters_right !=
         current_letters_guessed.append(letter_guessed)
         current_letters_right = print_word(current_letters_guessed)
         print_lines()
+# If the User is wrong
+    else:
+        amount_of_times_wrong += 1
+        current_letters_guessed.append(letter_guessed)
+# Updates hangman drawing
+        print_hangman(amount_of_times_wrong)
+# Print word        
+        current_letters_right = print_word(current_letters_guessed)
+        print_lines()
+
+print("Game is over!")
