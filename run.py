@@ -74,3 +74,22 @@ def print_hangman(wrong):
         print("/|\  |---+")
         print("/ \  |---+")
         print("    ===")
+
+
+# This function is in charge of printing out the word every time the loop runs.
+# Checking if character in random word is equal to any of the guessed letters
+# it will print the character at every single spot.
+# Else if the current character not in the guessed word,
+# fill it with the blank space.
+
+def print_word(guessed_letters):
+    counter = 0
+    right_letters = 0
+    for character in randomWord:
+        if (character in guessed_letters):
+            print(randomWord[counter], end=" ")
+            right_letters += 1
+        else:
+            print(" ", end=" ")
+        counter += 1
+    return right_letters
