@@ -114,7 +114,7 @@ current_letters_right = 0
 
 while (amount_of_times_wrong != 6 and current_letters_right !=
         length_of_word_to_guess):
-    print("\nLetters guessed so far: ")
+    print("\nLetters used so far: ")
     for letter in current_letters_guessed:
         print(letter, end=" ")
 # Asking for the input
@@ -125,14 +125,17 @@ while (amount_of_times_wrong != 6 and current_letters_right !=
         current_guess_index += 1
         current_letters_guessed.append(letter_guessed)
         current_letters_right = print_word(current_letters_guessed)
+        print("You guessed it right")
         print_lines()
+
 # If the User is wrong
     else:
         amount_of_times_wrong += 1
         current_letters_guessed.append(letter_guessed)
+        print("\nNo luck this time!\nGive it another go")
 # Updates hangman drawing
         print_hangman(amount_of_times_wrong)
-# Print word        
+# Print word
         current_letters_right = print_word(current_letters_guessed)
         print_lines()
 
