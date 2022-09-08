@@ -1,8 +1,8 @@
 import random
 
 name = input("Enter Your Name: ")
-print("Hello", name, "Welcome to Hangman Game!")
-print("Try to guess the word in under six attempts!")
+print("\nHello", name, "\nWelcome to Hangman Game!")
+print("Try to guess the word in under ten attempts!")
 print("---------------------------------------------")
 
 
@@ -34,45 +34,69 @@ for i in randomWord:
 def print_hangman(wrong):
     if (wrong == 0):
         print("\n+---+")
-        print("    |---+")
-        print("    |---+")
-        print("    |---+")
+        print("    |")
+        print("    |")
+        print("    |")
         print("   ===")
     elif (wrong == 1):
         print("\n+---+")
-        print("O   |---+")
-        print("    |---+")
-        print("    |---+")
+        print(" O  |")
+        print("    |")
+        print("    |")
         print("   ===")
     elif (wrong == 2):
         print("\n+---+")
-        print("O   |---+")
-        print("|   |---+")
-        print("    |---+")
+        print(" O  |")
+        print(" |  |")
+        print("    |")
         print("   ===")
     elif (wrong == 3):
         print("\n+---+")
-        print(" O   |---+")
-        print("/|   |---+")
-        print("     |---+")
-        print("    ===")
+        print(" O  |")
+        print("/|  |")
+        print("    |")
+        print("   ===")
     elif (wrong == 4):
         print("\n+---+")
-        print(" O   |---+")
-        print("/|\  |---+")
-        print("     |---+")
+        print(" O   |")
+        print("/|\  |")
+        print("     |")
         print("    ===")
     elif (wrong == 5):
         print("\n+---+")
-        print(" O   |---+")
-        print("/|\  |---+")
-        print("/    |---+")
+        print(" O   |")
+        print("/|\  |")
+        print("/    |")
         print("    ===")
     elif (wrong == 6):
         print("\n+---+")
-        print(" O__||---+")
-        print("/|\  |---+")
-        print("/ \  |---+")
+        print(" O   |")
+        print("/|\  |")
+        print("/ \  |")
+        print("    ===")
+    elif (wrong == 7):
+        print("\n+---+")
+        print(" O  ||")
+        print("/|\  |")
+        print("/ \  |")
+        print("    ===")
+    elif (wrong == 8):
+        print("\n+---+")
+        print(" O  \|")
+        print("/|\  |")
+        print("/ \  |")
+        print("    ===") 
+    elif (wrong == 9):
+        print("\n+---+")
+        print(" O -\|")
+        print("/|\  |")
+        print("/ \  |")
+        print("    ===")           
+    elif (wrong == 10):
+        print("\n+---+")
+        print(" O--\|")
+        print("/|\  |")
+        print("/ \  |")
         print("    ===")
 
 
@@ -112,7 +136,7 @@ current_guess_index = 0
 current_letters_guessed = []
 current_letters_right = 0
 
-while (amount_of_times_wrong != 6 and current_letters_right !=
+while (amount_of_times_wrong != 10 and current_letters_right !=
         length_of_word_to_guess):
     print("\nLetters used so far: ")
     for letter in current_letters_guessed:
