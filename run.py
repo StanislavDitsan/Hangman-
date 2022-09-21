@@ -1,4 +1,8 @@
 import random
+import pyfiglet
+
+ascii_banner = pyfiglet.figlet_format("Hangman Game!!")
+print(ascii_banner)
 
 name = input("Enter Your Name: ")
 print("\nHello", name, "\nWelcome to Hangman Game!")
@@ -85,13 +89,13 @@ def print_hangman(wrong):
         print(" O  \|")
         print("/|\  |")
         print("/ \  |")
-        print("    ===") 
+        print("    ===")
     elif (wrong == 9):
         print("\n+---+")
         print(" O -\|")
         print("/|\  |")
         print("/ \  |")
-        print("    ===")           
+        print("    ===")
     elif (wrong == 10):
         print("\n+---+")
         print(" O--\|")
