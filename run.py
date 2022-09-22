@@ -1,6 +1,7 @@
 import random
 import pyfiglet
 
+
 ascii_banner = pyfiglet.figlet_format("Hangman Game!!")
 print(ascii_banner)
 
@@ -58,61 +59,71 @@ def print_hangman(wrong):
         print(" O  |")
         print("    |")
         print("    |")
-        print("   ===")
+        print("   ===\n")
+        print("You have 9 lives left.")
     elif (wrong == 2):
         print("\n+---+")
         print(" O  |")
         print(" |  |")
         print("    |")
-        print("   ===")
+        print("   ===\n")
+        print("You have 8 lives left.")
     elif (wrong == 3):
         print("\n+---+")
         print(" O  |")
         print("/|  |")
         print("    |")
-        print("   ===")
+        print("   ===\n")
+        print("You have 7 lives left.")
     elif (wrong == 4):
         print("\n+---+")
         print(" O   |")
         print("/|\  |")
         print("     |")
-        print("    ===")
+        print("    ===\n")
+        print("You have 6 lives left.")
     elif (wrong == 5):
         print("\n+---+")
         print(" O   |")
         print("/|\  |")
         print("/    |")
-        print("    ===")
+        print("    ===\n")
+        print("You have 5 lives left.")
     elif (wrong == 6):
         print("\n+---+")
         print(" O   |")
         print("/|\  |")
         print("/ \  |")
-        print("    ===")
+        print("    ===\n")
+        print("You have 4 lives left.")
     elif (wrong == 7):
         print("\n+---+")
         print(" O  ||")
         print("/|\  |")
         print("/ \  |")
-        print("    ===")
+        print("    ===\n")
+        print("You have 3 lives left.")
     elif (wrong == 8):
         print("\n+---+")
         print(" O  \|")
         print("/|\  |")
         print("/ \  |")
-        print("    ===")
+        print("    ===\n")
+        print("You have 2 lives left.")
     elif (wrong == 9):
         print("\n+---+")
         print(" O -\|")
         print("/|\  |")
         print("/ \  |")
-        print("    ===")
+        print("    ===\n")
+        print("You have 1 lives left.")
     elif (wrong == 10):
         print("\n+---+")
         print(" O--\|")
         print("/|\  |")
         print("/ \  |")
-        print("    ===")
+        print("    ===\n")
+        print("YOU ARE DEAD =(")
 
 
 # This function is in charge of printing out the word every time the loop runs.
