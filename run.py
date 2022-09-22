@@ -4,8 +4,19 @@ import pyfiglet
 ascii_banner = pyfiglet.figlet_format("Hangman Game!!")
 print(ascii_banner)
 
-name = input("Enter Your Name: ")
-print("\nHello", name, "\nWelcome to Hangman Game!")
+# User name input - accepts only letters
+name_input = ''
+
+while True:
+    name_input = input("Enter Your Name: ")
+
+    if not name_input.isalpha():
+        print('Enter only Letters!\n')
+        continue
+    else:
+        break
+
+print("\nHello", name_input, "\nWelcome to Hangman Game!")
 print("Try to guess the word in under ten attempts!")
 print("---------------------------------------------")
 
